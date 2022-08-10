@@ -1,0 +1,43 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.bot-shadow {
+    box-shadow: 0px 4px 5px gray;
+}
+
+#container {
+    background-color: lightgray;
+    height: 100%;
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) 4fr;
+    grid-template-rows: 1fr 6fr;
+}
+
+#header {
+    position: relative;
+    z-index: 2;
+    background-color: blue;
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 1;
+}
+
+#sidebar {
+    background-color: pink;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
+}
+
+#content {
+    padding: max(20px, 4%);
+    background-color: tomato;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+
+    display: grid;
+    gap: max(5px, 2%);
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 1fr;
+}
