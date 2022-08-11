@@ -30,6 +30,26 @@ html, body {
     grid-row: 1 / span 2;
 }
 
+#sidebar-grid {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 3fr 3fr;
+    gap: 4px;
+}
+
+.sidebar-title {
+    font-size: 36px;
+    text-align: start;
+    align-self: center;
+    font-weight: 800;
+}
+
+.nav-links {
+    font-size: 28px;
+    text-align: start;
+    align-self: center;
+}
+
 #content {
     padding: max(5px, 1%);
     background-color: tomato;
