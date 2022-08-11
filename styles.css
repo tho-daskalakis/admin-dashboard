@@ -41,3 +41,29 @@ html, body {
     grid-template-columns: 5fr 1fr;
     grid-template-rows: 1fr;
 }
+
+#article {
+    background-color: cadetblue;
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+    padding: max(4px, 2%);
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr;
+    gap: 4px;
+}
+
+.card {
+    background-color: azure;
+    border: solid 2px aquamarine;
+    border-radius: 2%;
+    width: min(250px, 40%);
+    height: 200px;
+}
+
+#updates {
+    background-color: yellowgreen;
+    grid-row: 1 / span 1;
+    grid-column: 2 / span 1;
+}
