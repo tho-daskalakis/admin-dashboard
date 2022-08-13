@@ -32,9 +32,16 @@ html, body {
 
 #sidebar-grid {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 3fr 3fr;
     gap: 4px;
+}
+
+.sidebar-head {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    align-items: center;
 }
 
 .sidebar-title {
@@ -44,10 +51,29 @@ html, body {
     font-weight: 800;
 }
 
+.sidebar-main {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: repeat(6, 1fr);
+    align-items: center;
+}
+
+.sidebar-main > img, .sidebar-options > img {
+    width: 33%;
+    justify-self: center;
+}
+
 .nav-links {
     font-size: 28px;
     text-align: start;
     align-self: center;
+}
+
+.sidebar-options {
+    margin-top: 20%;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: repeat(6, 1fr);
 }
 
 #content {
