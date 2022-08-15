@@ -29,8 +29,9 @@ html, body {
 }
 
 input[id=search] {
-    background-color: azure;
-    border-radius: 10px;
+    background-color: rgb(220, 220, 220);
+    color: rgb(50, 50, 50);
+    border-radius: 15px;
     font-size: 24px;
 }
 
@@ -59,6 +60,57 @@ input[id=search] {
 
 .notifications > img {
     width: 40%;
+}
+
+#logo {
+    margin: 1%;
+    background-color: limegreen;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 6fr 3fr;
+}
+
+.logo-img {
+    align-self: center;
+    justify-content: center;
+}
+
+.user-greeting {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+}
+
+.user-greeting > * {
+    padding: 8px;
+    text-align: left;
+}
+
+.hi-there {
+    font-size: 24px;
+    font-weight: 600;
+    align-self: baseline;
+}
+
+.user-name {
+    font-size: 28px;
+    font-weight: 600;
+    align-self: center;
+}
+
+.top-bar-actions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+}
+
+.top-bar-actions .btn {
+    background-color: blueviolet;
+    height: 35%;
+    align-self: center;
+    margin: 4%;
+    border-radius: 20px;
 }
 
 #sidebar {
